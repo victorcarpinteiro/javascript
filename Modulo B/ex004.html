@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome ?')
+        document.write(`Olá, <b> ${nome}</b>, seja bem-vindo !<br>`)
+        document.write(`Seu nome tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em letras Maiúsculas é <strong>${nome.toUpperCase()}</strong><br>`)
+        document.write(`Seu nome em letras minúsculas é <strong>${nome.toLowerCase()}</strong><br>`)
+        var salario = window.prompt('Qual seu salario?')
+        var sal = salario.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})
+        window.alert(`OK ${nome}, seu salário é ${sal}.`)
+    </script>
+</body>
+</html>
