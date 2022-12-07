@@ -20,8 +20,9 @@
         document.write(`Seu nome em letras Maiúsculas é <strong>${nome.toUpperCase()}</strong><br>`)
         document.write(`Seu nome em letras minúsculas é <strong>${nome.toLowerCase()}</strong><br>`)
         var salario = window.prompt('Qual seu salario?')
-        var sal = salario.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})
-        window.alert(`OK ${nome}, seu salário é ${sal}.`)
+        var sal = salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})//testado em node (ok) testado em navegador (fail !)
+        document.write(`Ok ${nome}, seu salário é de ${sal}<br>`)
+            
     </script>
 </body>
 </html>
