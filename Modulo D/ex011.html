@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigrante</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <p>Qual país você mora</p>
+    <input type="text" name="pp" id="pp">
+    <input type="button" value="Checar" onclick="checar()">
+    <div id="res">O Resultado vai aqui</div>
+
+    <script>
+        var txt = document.querySelector('input#pp')
+        var r = document.querySelector('div#res')
+
+        function checar(){
+        r.innerHTML = `Legal, você mora em ${txt.value}`
+
+        if (txt.value == 'Brasil') {
+            r.innerHTML += `<p>Você é brasileiro</p>`
+        } else {
+            r.innerHTML += `<p>Você é estrangeiro</p>`
+        }
+        }
+    </script>
+</body>
+</html>
