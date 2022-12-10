@@ -33,3 +33,11 @@ footer{
     width: 100vw;
     text-align: center;
 }
+
+img#fotos{
+    padding-top: 20px;
+    margin: 10px;
+    border-radius: 200px;
+    margin: auto;
+    display: block;
+}
