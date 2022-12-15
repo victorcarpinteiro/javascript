@@ -3,14 +3,16 @@ function gerar(){
     var tabuada = document.getElementById('tabuada')
 
     if (numero.value.length == 0){
-        window.alert('favor preencher um numero')
-    }else{
+        window.alert('Por favor, digite um numero')
+    }else {
         var n = Number(numero.value)
         var c = 1
+        tabuada.innerHTML=' '
         while (c <= 10){
-            var tab = document.creatElement('option')
-            tab.text = `${n} x ${c} = ${n*c}`
-            tabuada.appenChild(tab)
+            var tabu = document.createElement('option')
+            tabu.text = `${n} x ${c} = ${n*c}`
+            tabu.value = `tab${c}`
+            tabuada.appendChild(tabu)
             c++
         }
     }
