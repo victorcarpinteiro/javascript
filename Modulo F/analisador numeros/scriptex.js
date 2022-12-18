@@ -22,12 +22,15 @@ function finalizar(){
     var organizar = vetor.sort()
     var quantidade = vetor.length
     var maior 
-    var menor
+    var menor = vetor[0]
     var soma
-    var média
-    window.alert(maior)
-    for(var s = 0; s < vetor.length ;s++){
-    var soma = vetor += vetor
-    }
-    window.alert(s)
+    // var média // soma dividido pela quantidade
+    // window.alert(maior)
+    // window.alert(s)
+    var qtt = document.createElement('p')
+    qtt.innerHTML = `Ao todo temos ${quantidade} números cadastrados.`
+    texto.appendChild(qtt)
+    var meno = document.createElement('p')
+    meno.innerHTML = `O menor valor informado foi ${menor}.`
+    texto.appendChild(meno)
 }
